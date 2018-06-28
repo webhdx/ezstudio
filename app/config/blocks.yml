@@ -7,6 +7,7 @@ ezplatform_page_fieldtype:
             configuration_template: '@EzPlatformPageBuilder/page_builder/block/config/embed.html.twig'
             views:
                 default: { name: 'Default block layout', template: '@ezdesign/blocks/hero.html.twig' }
+                image: { name: 'Hero image', template: '@ezdesign/blocks/hero_image.html.twig' }
             attributes:
                 text:
                     name: Text
@@ -28,3 +29,7 @@ ezplatform_page_fieldtype:
                             options:
                                 pattern: '/[0-9]+/'
                             message: Choose a Content item
+
+        contentlist:
+            views:
+                cards: { name: 'Cards list layout', template: '@ezdesign/blocks/cards_list.html.twig' }
